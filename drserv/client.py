@@ -78,9 +78,9 @@ def main():
         response = requests.post(url, data=f,
                                  headers={'Authorization': 'chap:' + token})
         if response.ok:
-            print 'Upload succeeded'
+            print('Upload succeeded')
         else:
-            print 'Fail: %d: %s' % (response.status_code, response.text)
+            print('Fail: %d: %s' % (response.status_code, response.text))
 
 
 if __name__ == '__main__':
